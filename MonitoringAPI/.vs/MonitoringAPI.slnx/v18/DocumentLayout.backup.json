@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ankit\\source\\repos\\MonitoringAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{852E25B5-6EC6-4A90-B648-8E8EA6E1A9A1}|MonitoringAPI\\MonitoringAPI.csproj|c:\\users\\ankit\\source\\repos\\monitoringapi\\monitoringapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{852E25B5-6EC6-4A90-B648-8E8EA6E1A9A1}|MonitoringAPI\\MonitoringAPI.csproj|solutionrelative:monitoringapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852E25B5-6EC6-4A90-B648-8E8EA6E1A9A1}|MonitoringAPI\\MonitoringAPI.csproj|c:\\users\\ankit\\source\\repos\\monitoringapi\\monitoringapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{852E25B5-6EC6-4A90-B648-8E8EA6E1A9A1}|MonitoringAPI\\MonitoringAPI.csproj|solutionrelative:monitoringapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852E25B5-6EC6-4A90-B648-8E8EA6E1A9A1}|MonitoringAPI\\MonitoringAPI.csproj|c:\\users\\ankit\\source\\repos\\monitoringapi\\monitoringapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{852E25B5-6EC6-4A90-B648-8E8EA6E1A9A1}|MonitoringAPI\\MonitoringAPI.csproj|solutionrelative:monitoringapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852E25B5-6EC6-4A90-B648-8E8EA6E1A9A1}|MonitoringAPI\\MonitoringAPI.csproj|c:\\users\\ankit\\source\\repos\\monitoringapi\\monitoringapi\\controllers\\cardtrackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{852E25B5-6EC6-4A90-B648-8E8EA6E1A9A1}|MonitoringAPI\\MonitoringAPI.csproj|solutionrelative:monitoringapi\\controllers\\cardtrackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852E25B5-6EC6-4A90-B648-8E8EA6E1A9A1}|MonitoringAPI\\MonitoringAPI.csproj|c:\\users\\ankit\\source\\repos\\monitoringapi\\monitoringapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{852E25B5-6EC6-4A90-B648-8E8EA6E1A9A1}|MonitoringAPI\\MonitoringAPI.csproj|solutionrelative:monitoringapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852E25B5-6EC6-4A90-B648-8E8EA6E1A9A1}|MonitoringAPI\\MonitoringAPI.csproj|c:\\users\\ankit\\source\\repos\\monitoringapi\\monitoringapi\\model\\cardtrack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{852E25B5-6EC6-4A90-B648-8E8EA6E1A9A1}|MonitoringAPI\\MonitoringAPI.csproj|solutionrelative:monitoringapi\\model\\cardtrack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\ankit\\source\\repos\\MonitoringAPI\\MonitoringAPI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "MonitoringAPI\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\ankit\\source\\repos\\MonitoringAPI\\MonitoringAPI\\appsettings.Development.json*",
+              "RelativeToolTip": "MonitoringAPI\\appsettings.Development.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-17T11:30:14.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ankit\\source\\repos\\MonitoringAPI\\MonitoringAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "MonitoringAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\ankit\\source\\repos\\MonitoringAPI\\MonitoringAPI\\appsettings.json",
+              "RelativeToolTip": "MonitoringAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-17T11:29:32.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\ankit\\source\\repos\\MonitoringAPI\\MonitoringAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "MonitoringAPI\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\ankit\\source\\repos\\MonitoringAPI\\MonitoringAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "MonitoringAPI\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T11:28:47.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CardTrackController.cs",
+              "DocumentMoniker": "C:\\Users\\ankit\\source\\repos\\MonitoringAPI\\MonitoringAPI\\Controllers\\CardTrackController.cs",
+              "RelativeDocumentMoniker": "MonitoringAPI\\Controllers\\CardTrackController.cs",
+              "ToolTip": "C:\\Users\\ankit\\source\\repos\\MonitoringAPI\\MonitoringAPI\\Controllers\\CardTrackController.cs",
+              "RelativeToolTip": "MonitoringAPI\\Controllers\\CardTrackController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvwoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T11:20:45.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CardTrack.cs",
+              "DocumentMoniker": "C:\\Users\\ankit\\source\\repos\\MonitoringAPI\\MonitoringAPI\\Model\\CardTrack.cs",
+              "RelativeDocumentMoniker": "MonitoringAPI\\Model\\CardTrack.cs",
+              "ToolTip": "C:\\Users\\ankit\\source\\repos\\MonitoringAPI\\MonitoringAPI\\Model\\CardTrack.cs",
+              "RelativeToolTip": "MonitoringAPI\\Model\\CardTrack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T11:18:51.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "C:\\Users\\ankit\\source\\repos\\MonitoringAPI\\MonitoringAPI\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "MonitoringAPI\\Controllers\\FileController.cs",
+              "ToolTip": "C:\\Users\\ankit\\source\\repos\\MonitoringAPI\\MonitoringAPI\\Controllers\\FileController.cs",
+              "RelativeToolTip": "MonitoringAPI\\Controllers\\FileController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T11:18:09.245Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
