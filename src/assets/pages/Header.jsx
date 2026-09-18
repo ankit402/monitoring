@@ -1,8 +1,8 @@
-function Header({ activePage, setActivePage }) {
+function Header({ activePage, setActivePage, count }) {
   const navItems = [
     { label: "Files", count: 7 },
-    { label: "Card print tracking", count: 180 },
-    { label: "Activity history", count: 54 },
+    { label: "Card print tracking", count: 7 },
+    { label: "Activity history", count: 12 },
   ];
 
   return (

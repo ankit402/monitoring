@@ -43,16 +43,7 @@ function Dashboard() {
           <div
             className="file-modal"
             onClick={(event) => event.stopPropagation()}
-          >
-            <button
-              className="modal-close"
-              onClick={() => setSelectedFile(null)}
-            >
-              ×
-            </button>
-            <p className="eyebrow">FILE DETAILS</p>
-            <h2>{selectedFile.name}</h2>
-            <CardGrid selectedFile={selectedFile} />
+          > 
           </div>
         </div>
       )}

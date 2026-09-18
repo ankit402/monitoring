@@ -1,4 +1,3 @@
-
 import { useEffect, useMemo, useState } from "react";
 import "../../App.css";
 import FileDetails from "./FileDetails";
@@ -6,13 +5,10 @@ import FileDetails from "./FileDetails";
 const API_URL = "/api/File";
 
 function Files() {
-  // API data state
   const [filesData, setFilesData] = useState([]);
-
   const [searchText, setSearchText] = useState("");
   const [selectedFile, setSelectedFile] = useState(null);
 
-  // Loading and error state
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
@@ -35,20 +31,28 @@ function Files() {
         );
       }
 
-      const data = await response.json();
+      const result = await response.json();
 
-      console.log("Files API Response:", data);
+      console.log("Files API Response:", result);
 
-      // Update table data
+      // Supports both:
+      // 1. Direct array response: [...]
+      // 2. Wrapped response: { data: [...] }
+      const data = Array.isArray(result)
+        ? result
+        : Array.isArray(result.data)
+        ? result.data
+        : [];
+
       setFilesData(data);
 
-      // Select first file by default
+      // Keep selected file if it still exists
       setSelectedFile((previousFile) => {
         if (previousFile) {
           return (
-            data.find(
-              (file) => file.id === previousFile.id
-            ) || data[0] || null
+            data.find((file) => file.id === previousFile.id) ||
+            data[0] ||
+            null
           );
         }
 
@@ -56,7 +60,10 @@ function Files() {
       });
     } catch (err) {
       console.error("Failed to fetch files:", err);
+
       setError(err.message || "Unable to load files.");
+      setFilesData([]);
+      setSelectedFile(null);
     } finally {
       setLoading(false);
     }
@@ -68,7 +75,6 @@ function Files() {
   }, []);
 
   // Search API data
-  //useMemo remembers the result of a calculation and recalculates it only when one of its dependencies changes
   const filteredFiles = useMemo(() => {
     const search = searchText.trim().toLowerCase();
 
@@ -86,6 +92,7 @@ function Files() {
         file.path,
         file.status,
       ]
+        .filter(Boolean)
         .join(" ")
         .toLowerCase()
         .includes(search)
@@ -95,10 +102,8 @@ function Files() {
   return (
     <main className="files-page">
       <div className="files-layout">
-
         {/* LEFT SIDE - TABLE */}
         <section className="files-panel">
-
           <div className="files-panel-header">
             <h2>Files pushed today</h2>
 
@@ -108,15 +113,12 @@ function Files() {
           </div>
 
           <div className="files-toolbar">
-
             <input
               type="text"
               className="files-search"
               placeholder="Search file, product, status..."
               value={searchText}
-              onChange={(event) =>
-                setSearchText(event.target.value)
-              }
+              onChange={(event) => setSearchText(event.target.value)}
             />
 
             <span className="files-count">
@@ -130,7 +132,6 @@ function Files() {
             >
               {loading ? "Loading..." : "Refresh"}
             </button>
-
           </div>
 
           {/* LOADING */}
@@ -145,21 +146,16 @@ function Files() {
             <div className="files-error">
               <p>{error}</p>
 
-              <button
-                type="button"
-                onClick={fetchFiles}
-              >
+              <button type="button" onClick={fetchFiles}>
                 Retry
               </button>
             </div>
           )}
 
           {/* TABLE */}
-          {!loading && !error && (
+          {!loading && !error && filteredFiles.length > 0 && (
             <div className="files-table-container">
-
               <table className="files-table">
-
                 <thead>
                   <tr>
                     <th>Source file</th>
@@ -173,7 +169,6 @@ function Files() {
 
                 <tbody>
                   {filteredFiles.map((file) => (
-
                     <tr
                       key={file.id}
                       className={
@@ -183,7 +178,6 @@ function Files() {
                       }
                       onClick={() => setSelectedFile(file)}
                     >
-
                       <td className="source-file-cell">
                         <strong>{file.name}</strong>
 
@@ -205,26 +199,21 @@ function Files() {
 
                       <td>
                         <div className="progress-blocks">
-
                           {Array.from({ length: 6 }).map(
                             (_, index) => (
-
                               <span
                                 key={index}
                                 className={
                                   index < file.progress
-                                    ? file.statusType ===
-                                        "rejected" &&
+                                    ? file.statusType === "rejected" &&
                                       index === 1
                                       ? "progress-error"
                                       : "progress-completed"
                                     : "progress-empty"
                                 }
                               />
-
                             )
                           )}
-
                         </div>
                       </td>
 
@@ -236,31 +225,23 @@ function Files() {
                           {file.status}
                         </span>
                       </td>
-
                     </tr>
-
                   ))}
                 </tbody>
-
               </table>
-
             </div>
           )}
 
           {/* NO FILES */}
-          {!loading &&
-            !error &&
-            filteredFiles.length === 0 && (
-              <div className="files-loading">
-                No files found.
-              </div>
-            )}
-
+          {!loading && !error && filteredFiles.length === 0 && (
+            <div className="files-loading">
+              No files found.
+            </div>
+          )}
         </section>
 
         {/* RIGHT SIDE - DETAILS */}
         <FileDetails selectedFile={selectedFile} />
-
       </div>
     </main>
   );
